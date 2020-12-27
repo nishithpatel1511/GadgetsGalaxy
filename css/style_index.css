@@ -1,16 +1,31 @@
 body{
     background-color: #001b3a;
 }
-
+.navbar-brand h1{
+    padding-left: 30px;
+}
 /*navbar*/
-#main_navbar{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 #menubar{
-    margin-right: 25px!important;
-    margin-left: auto!important;
+    margin-left: 20px;
+    justify-content: center;
 }
-.nav-link{
-    color:darkgoldenrod!important;
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .show>.nav-link
+{
+    color:darkgoldenrod;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+ .navbar-light .navbar-nav .nav-link:hover{
+    background-color: antiquewhite;
+    
+}
+.navbar-toggler{
+    background-color: white;
+}
+
+/*megamenu*/
+#search-btn{
+    margin-left: 20px;  
+    margin-right: 12px; 
 }
