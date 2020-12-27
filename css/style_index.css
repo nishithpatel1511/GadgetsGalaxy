@@ -5,6 +5,11 @@ body{
     padding-left: 30px;
 }
 /*navbar*/
+
+#nav-btn{
+    width: 1em;
+    height: 1em;
+}
 #menubar{
     margin-left: 20px;
     justify-content: center;
@@ -25,7 +30,48 @@ body{
 }
 
 /*megamenu*/
-#search-btn{
-    margin-left: 20px;  
+#search-bar{
+    margin-left: 25px;  
     margin-right: 12px; 
+}
+#search-btn{
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+
+/*media query*/
+
+/*1 : extra small devices*/
+@media (max-width: 575.98px) { 
+    .navbar-brand h1{
+        padding-left: 12px;
+    }
+    #search-bar{
+        height: 30px;
+    }
+}
+
+/*2 : small devices*/
+@media (min-width: 576px) and (max-width: 767.98px) {  
+    .navbar-brand h1{
+        padding-left: 12px;
+    }
+    #search-bar{
+        height: 35px;
+    }
+}
+
+/*3 : medium devices*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+}
+
+/*4 : large devices*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+}
+
+/*5 : extra large devices*/
+@media (min-width: 1200px) { 
 }
