@@ -1,114 +1,16 @@
-/*header*/
+body{
+    background-color: #001b3a;
+}
+
+/*navbar*/
 #main_navbar{
-
-	background-color: black;
-	padding-top: 20px;
-	padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-#main_navbar h2{
-      color: orange;
+#menubar{
+    margin-right: 25px!important;
+    margin-left: auto!important;
 }
-.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
-    color: #d3d3d3;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: #d3d3d3;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-	color: blue;
-}
-.navbar-toggler{
-    background-color: white;
-}
-.nav-item{
-	color: orange;
-}
-
-/*dropdown*/
-.dropdown-item{
-	background-color: white;
-	color: black;
-}
-.dropdown-menu{
-	background-color: black;
-}
-footer{
-	background-color: black;
-}
-
-.panel-footer .container{
-	padding-top: 20px;
-	padding-bottom: 20px;
-    padding-left: 40px;
-    color: white;
-}
-
-/*media query*/
-@media (max-width: 575.98px) { 
-    #navbarSupportedContent{
-    	padding-top: 15px;
-	    padding-left: 10px;
-	    padding-right: 10px;
-    }
-    #navbar-list{
-    	padding-left: 15px;
-	    background-color: black;
-    }
-    
-    .panel-footer .container{
-	    padding-left: 0px;
-	    text-align: center;
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {  
-    #navbarSupportedContent{
-    	padding-top: 15px;
-	    padding-left: 20px;
-	    padding-right: 20px;
-    }
-    #navbar-list{
-    	padding-left: 15px;
-	    background-color: black;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) { 
-    #navbar-list{
-	    background-color: black;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-    .navbar-light .navbar-nav .nav-link:hover {
-	    background-color: white;
-    }
-    #navbarSupportedContent {
-	    padding-left: 250px;
-	    padding-right: 10px;
-    }
-    .dropdown-item{
-	    background-color: gray;
-	    color: black;
-    } 
-    .dropdown-menu{
-	    background-color: gray;
-    }
-}
-
-@media (min-width: 1200px) { 
-    #navbarSupportedContent {
-	    padding-left: 470px;
-	    padding-right: 10px;
-    }
-    .navbar-light .navbar-nav .nav-link:hover {
-	    background-color: white;
-    }
-    .dropdown-item{
-	    background-color: gray;
-	    color: black;
-    } 
-    .dropdown-menu{
-	    background-color: gray;
-    }
+.nav-link{
+    color:darkgoldenrod!important;
 }
