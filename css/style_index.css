@@ -25,23 +25,68 @@ body{
     background-color: antiquewhite;
     
 }
-.navbar-toggler{
-    background-color: white;
+.navbar-light .navbar-toggler-icon 
+{
+    background-image : url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='4 4 28 28'%3e%3cpath stroke='rgba(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler,
+.navbar-toggler:focus
+{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    padding-right: 5px;
+}
+
+/*side menu mobile*/
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #001b3a;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+    height: 100%;
+    background-color: black;
+    background-size: 100% 100%;
+}
+
+  .sidepanel a {
+    color: whitesmoke;
+    padding-left: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+  .sidepanel h1 {
+    color: whitesmoke;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+
+  .sidepanel .closebtn {
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
 
 /*megamenu*/
 #search-bar{
-    margin-left: 25px;  
-    margin-right: 12px; 
+    margin-left: 10px;  
+    margin-right: 9px; 
+    margin-bottom: 5px;
 }
 #search-btn{
     padding: 0px;
     padding-left: 5px;
     padding-right: 5px;
 }
-
-
-
 /*media query*/
 
 /*1 : extra small devices*/
@@ -56,6 +101,10 @@ body{
     .navbar-brand h1{
         padding-left: 12px;
     }
+    .dropdown-menu {
+        margin-left: 20px !important;
+        background-color: gray;
+      }
     #search-bar{
         height: 30px;
     }
@@ -67,6 +116,10 @@ body{
         background-color: #001b3a;
         padding-bottom: 15px;
     }
+    .dropdown-menu {
+        margin-left: 20px !important;
+        background-color: gray;
+      }
     body{
         background-color: whitesmoke;
     }
