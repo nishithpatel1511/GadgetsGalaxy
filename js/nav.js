@@ -7,10 +7,11 @@ var clk = 0;
           if (clk % 2 == 0) {
            $('div:not(#mySidepanel)').css("filter", "blur(0px)");
            document.body.style.backgroundColor = "white"; 
-            $('#mySidepanel').css({ 'width': 0 });
+            //$('#mySidepanel').css({ 'width': 0 });
+            $('#mySidepanel').toggleClass('opensidepanel');
           }
           else {
-            $('#mySidepanel').css({ 'width': 250 });
+            $('#mySidepanel').toggleClass('opensidepanel');
            $('div:not(#mySidepanel)').css("filter", "blur(4px)");
            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
           }
@@ -19,18 +20,10 @@ var clk = 0;
         $('.closebtn').click(function () {
           clk++;
           $('#tg').toggleClass('fa-times');
-          if (clk % 2 == 0) {
-            
            $('div:not(#mySidepanel)').css("filter", "blur(0px)");
             document.body.style.backgroundColor = "white"; 
-            $('#mySidepanel').css({ 'width': 0 });
-          }
-          else {
-            $('#mySidepanel').css({ 'width': 250 });
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-            
-           $('div:not(#mySidepanel)').css("filter", "blur(4px)");
-          }
+            $('#mySidepanel').toggleClass('opensidepanel');
+          
         });
 
         // $('div:not(#mySidepanel)').click(function () {

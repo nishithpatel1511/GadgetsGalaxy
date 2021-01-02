@@ -39,7 +39,9 @@ body{
 }
 
 /*side menu mobile*/
-
+.opensidepanel{
+    width: 250px !important;
+}
 .sidepanel {
     width: 0;
     position: fixed;
