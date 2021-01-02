@@ -24,19 +24,17 @@ var clk = 0;
             document.body.style.backgroundColor = "white"; 
             $('#mySidepanel').toggleClass('opensidepanel');
           
-        });
-
-        // $('div:not(#mySidepanel)').click(function () {
-        // //  if (($('#mySidepanel').width()) == 250) {
-        // //     clk++;
-        // //     //  $('#tg').toggleClass('fa-times');
-        // //     $('div:not(#mySidepanel)').css("filter", "blur(0px)");
-        // //     document.body.style.backgroundColor = "white"; 
-        // //     $('#mySidepanel').css({ 'width': 0 });
-        // //   }
-        // clk++;
-        //   $('#tg').toggleClass('fa-times');
+         });
+        // $(document).click(function(e)
+        // {
+        //   if($(e.target).closest('#mySidepanel').length == 0)
+        //   {
+        //     clk++;
+        //     $('#tg').toggleClass('fa-times');
+        //     $('div:not(#mySidepanel)').css("filter", "blur(0px)");
+        //      document.body.style.backgroundColor = "white"; 
+        //     $('#mySidepanel').toggleClass('opensidepanel');
+        //   }
         // });
-
 
       });
