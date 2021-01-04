@@ -113,6 +113,8 @@ body{
       } */
     #search-bar{
         height: 30px;
+        margin-left: 25px;
+        margin-right: 15px;
     }
 }
 
@@ -133,7 +135,9 @@ body{
         padding-left: 12px;
     }
     #search-bar{
-        height: 35px;
+        height: 30px;
+        margin-left: 25px;
+        margin-right: 15px;
     }
 }
 
