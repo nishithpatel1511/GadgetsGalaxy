@@ -50,7 +50,8 @@ body{
     left: 0;
     background-color: #001b3a;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition-delay: 0.2s;
+    transition: 0.8s;
     padding-top: 40px;
     height: 100%;
     background-color: black;
@@ -59,28 +60,62 @@ body{
 .closebtn{
     padding-top: 15px;
     text-decoration: none;
-}
- .nav-link {
-    color: orange;
-    padding-left: 0px ;
-    text-decoration: none;
-    margin-top: 20px;
-    text-align: center;
-}
-
-  .sidepanel h1 {
-    color: whitesmoke;
-    padding-top: 50px;
-    margin-bottom: 40px;
-}
-
-  .sidepanel .closebtn {
     color: whitesmoke;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
 }
+/*animation of close button*/
+.closebtnclose{
+    animation-name: crossrotate;
+    animation-duration: 0.6s;
+}
+@keyframes crossrotate{
+    100%{transform : rotate(-360deg)};
+}
+.closebtnopen{
+    animation-name: crossopen;
+    animation-duration: 00.7s;
+}
+@keyframes crossopen{
+    100%{transform : rotate(360deg)};
+}
+/*nav-link*/
+ .nav-link {
+    color: orange;
+    padding-left: 0px ;
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15PX;
+}
+
+
+/*title*/
+.brand {
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 40px;
+}
+/*animation*/
+.brand-open{
+    animation-name: sideh1open;
+    animation-delay: 1 s;
+    animation-duration: 1.2s;
+}
+@keyframes sideh1open{
+    0%{font-size: 0px;}
+}
+.brand-close{
+    animation-name: sideh1close;
+    animation-duration: 0.5s;
+}
+@keyframes sideh1close{
+    100%{font-size: 0px;}
+}
+
 
 /*megamenu*/
 #search-bar{
