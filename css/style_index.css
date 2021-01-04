@@ -56,12 +56,16 @@ body{
     background-color: black;
     background-size: 100% 100%;
 }
-
-  .sidepanel a {
-    color: whitesmoke;
-    padding-left: 40px;
+.closebtn{
+    padding-top: 15px;
+    text-decoration: none;
+}
+ .nav-link {
+    color: orange;
+    padding-left: 0px ;
     text-decoration: none;
     margin-top: 20px;
+    text-align: center;
 }
 
   .sidepanel h1 {
@@ -103,10 +107,10 @@ body{
     .navbar-brand h1{
         padding-left: 12px;
     }
-    .dropdown-menu {
+    /* .dropdown-menu {
         margin-left: 20px !important;
         background-color: gray;
-      }
+      } */
     #search-bar{
         height: 30px;
     }
