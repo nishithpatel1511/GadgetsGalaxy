@@ -10,7 +10,7 @@ body{
 /*navbar*/
 .navbar{
     margin-top: -8px;
-    margin-bottom: -8px;
+    margin-bottom: -5px;
 }
 #nav-btn{
     width: 1em;
@@ -142,6 +142,9 @@ body{
         background-color: #001b3a;
         padding-bottom: 10px;
     }
+    .navbar{
+        padding-bottom: 0px;
+    }
     body{
         background-color: whitesmoke;
     }
@@ -154,8 +157,9 @@ body{
       } */
     #search-bar{
         height: 30px;
+        margin-top: 10px;
         margin-left: 25px;
-        margin-right: 15px;
+        margin-right: 25px;
     }
 }
 
