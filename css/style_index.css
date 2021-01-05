@@ -8,7 +8,10 @@ body{
     margin-left: 10px;
 } 
 /*navbar*/
-
+.navbar{
+    margin-top: -8px;
+    margin-bottom: -8px;
+}
 #nav-btn{
     width: 1em;
     height: 1em;
