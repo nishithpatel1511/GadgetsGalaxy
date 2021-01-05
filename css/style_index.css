@@ -4,6 +4,9 @@ body{
 .navbar-brand h1{
     padding-left: 30px;
 }
+ .logo-img img{
+    padding-left: 10px;
+} 
 /*navbar*/
 
 #nav-btn{
