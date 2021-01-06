@@ -154,16 +154,16 @@
  <div>
   <header class="d-md-none">
     <nav class="navbar">
-      <div class="container-fluid ">
-       <button id="navbarToggler" class="navbar-toggler col-2" type="button">
+      <div class="container-fluid d-sm-none d-md-block">
+        <button id="navbarToggler" class="navbar-toggler col-2" type="button">
            <i class="fas fa-bars" id="tg"></i>
-         </button> 
-       <div class="logo-img col-8">
+        </button> 
+        <div class="logo-img col-8">
            <center>
           <a href="index.html"><img src="image/site logo.png" height="75px" width="150px">
          </a>
           </center> 
-       </div>
+        </div>
         <!-- <a class="navbar-brand text-white" href="#">
           <h1>Gadgets Galaxy</h1>
         </a> -->
@@ -172,6 +172,27 @@
         </button>
         
       </div>
+      
+      
+      <div class="container-fluid d-none d-sm-block" id="nav-sm">
+        <!-- <div class=" d-none d-sm-block"> -->
+        <button id="navbarToggler" class="navbar-toggler col-2" type="button">
+            <i class="fas fa-bars" id="tg" style="color: whitesmoke;"></i>
+          </button> 
+          <a href="index.html" class="logo-img col-6">
+            <center>
+             <img src="image/site logo.png" height="75px" width="150px">
+            </center> 
+          </a>
+          <form class="d-flex col-4" id="search-bar-sm">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" id="search-btn">
+              <i class="fas fa-search"  style="color: whitesmoke;"></i>
+            </button>
+          </form>
+       </div>
+       <!-- </div> -->
+
     </nav>
     <form class="d-flex d-none" id="search-bar">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -187,5 +208,4 @@
     crossorigin="anonymous"></script>
 
 </body>
-
 </html>
