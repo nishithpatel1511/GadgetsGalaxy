@@ -70,12 +70,12 @@ $(function () {
     if(clk_search%2!=0)
     {
       $('#search-bar').removeClass('d-none');
-      $('#search-icon i').toggleClass('fa-times');
+      $('#search-icon').toggleClass('fa-times');
      }
      else
      {
        $('#search-bar').addClass('d-none');
-       $('#search-icon i').toggleClass('fa-times');
+       $('#search-icon').toggleClass('fa-times');
      }
   });
   $(document).click(function(e){
@@ -91,7 +91,7 @@ $(function () {
         {
           clk_search++;  
           $('#search-bar').addClass('d-none');
-          $('#search-icon i').toggleClass('fa-times');        
+          $('#search-icon').toggleClass('fa-times');        
         }
       }
     }

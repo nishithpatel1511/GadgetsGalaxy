@@ -40,6 +40,9 @@ body{
     padding: 0px;
     padding-right: 5px;
 }
+#tg{
+    color: whitesmoke;
+}
 
 /*side menu mobile*/
 .opensidepanel{
@@ -121,6 +124,15 @@ body{
 
 
 /*megamenu*/
+#search{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    /* padding-right: 5px; */
+}
+#search-icon{
+    color: whitesmoke;
+}
 #search-bar{
     margin-left: 10px;  
     margin-right: 9px; 
