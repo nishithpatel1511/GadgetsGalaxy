@@ -1,0 +1,27 @@
+[
+    {
+        "name":"iphone 12",
+        "image": "iphone12.jpg",
+        "comapany": "Apple"
+    },
+    {
+        "name":"iphone 12 pro max",
+        "image":"iphone12promax.jpg",
+        "comapany":"Apple"
+    },
+    {
+        "name":"iphone 12 pro",
+        "image":"iphone12pro.jpg",
+        "comapany":"Apple"
+    },
+    {
+        "name":"iphone 11",
+        "image":"iphone11.jpg",
+        "comapany":"Apple"
+    },
+    {
+        "name":"iphone XR",
+        "image":"iphonexr.jpg",
+        "comapany":"Apple"
+    }
+]
