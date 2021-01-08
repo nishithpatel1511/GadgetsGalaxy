@@ -83,11 +83,7 @@ $(function () {
     {
       if(!$('#search-bar').hasClass('d-none'))
       {
-        if($(e.target).closest('#search-icon').length != 0)
-        {
-          search();
-        }
-        else
+        if($(e.target).closest('#search-icon').length == 0)
         {
           clk_search++;  
           $('#search-bar').addClass('d-none');
