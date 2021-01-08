@@ -15,6 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style_index.css">
   <script src="js/nav.js"></script>
+  <script src="js/search/search.js"></script>
 </head>
 
 <body>
@@ -25,7 +26,7 @@
           <h1>Gadgets Galaxy</h1>
         </span>
         <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-2" type="search" placeholder="Search" id="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
       </div>
@@ -185,7 +186,7 @@
             </center> 
           </a>
           <form class="d-flex col-4" id="search-bar-sm">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" type="search" placeholder="Search" id="Search">
             <button class="btn btn-outline-success" type="submit" id="search-btn">
               <i class="fas fa-search"  style="color: whitesmoke;"></i>
             </button>
@@ -195,7 +196,7 @@
 
     </nav>
     <form class="d-flex d-none" id="search-bar">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control me-2" type="search" placeholder="Search" id="Search">
       <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
     </form>
   </header>
