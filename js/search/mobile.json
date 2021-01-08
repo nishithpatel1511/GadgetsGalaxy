@@ -1,27 +1,27 @@
 [
     {
         "name":"iphone 12",
-        "image": "https://nishithpatel1511.github.io/image/mobile/apple/iphone12/1.jpg",
+        "image": "https://nishithpatel1511.github.io/Gadgetworld/image/Mobile/Apple/iphone12/1.jpg",
         "company": "Apple"
     },
     {
         "name":"iphone 12 pro max",
-        "image":"https://nishithpatel1511.github.io/image/mobile/apple/iphone12promax/1.jpg",
+        "image":"https://nishithpatel1511.github.io/Gadgetworld/image/Mobile/Apple/iphone12promax/1.jpg",
         "company":"Apple"
     },
     {
         "name":"iphone 12 pro",
-        "image":"https://nishithpatel1511.github.io/image/mobile/apple/iphone12pro/1.jpg",
+        "image":"https://nishithpatel1511.github.io/Gadgetworld/image/Mobile/Apple/iphone12pro/1.jpg",
         "company":"Apple"
     },
     {
         "name":"iphone 11",
-        "image":"https://nishithpatel1511.github.io/image/mobile/apple/iphone11/1.jpg",
+        "image":"https://nishithpatel1511.github.io/Gadgetworld/image/Mobile/Apple/iphone11/1.jpg",
         "company":"Apple"
     },
     {
         "name":"iphone XR",
-        "image":"https://nishithpatel1511.github.io/image/mobile/apple/iphonexr/1.jpg",
+        "image":"https://nishithpatel1511.github.io/Gadgetworld/image/Mobile/Apple/iphonexr/1.jpg",
         "company":"Apple"
     }
 ]
