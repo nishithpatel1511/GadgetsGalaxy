@@ -65,7 +65,7 @@ $(function () {
   
   //searchbar
 
-  $('#search-icon').click(function search() {
+  $('#search-icon').click(function () {
     clk_search++;
     if(clk_search%2!=0)
     {

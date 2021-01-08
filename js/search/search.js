@@ -11,11 +11,14 @@ $(document).ready(function(){
         success : function(data){
           $.each(data,function(key,value){
             
-            if(value.name.search(exp) != -1 || value.comapany.search(exp) != -1)
+            if(value.name.search(exp) != -1 || value.company.search(exp) != -1)
             {
-              $('#result').append('<li class="list-group-item"><img src = "'+value.image+'" class= "img-thumbnail" height=50px width=50px>'+value.name+' | <span class= "text-muted">'+value.company+'</span></li>');
-             
+              $('#result').append('<li class="list-group-item"><img src = "'+value.image+'" class= "img-thumbnail" height=50px width=50px>'+value.name+' | <span class= "text-muted">'+value.company+'</span></li>'); 
             } 
+            else
+            {
+              console.log(exp,value.name);
+            }
             });
         },
         statusCode : {
@@ -37,7 +40,7 @@ $(document).ready(function(){
            success : function(data){
              $.each(data,function(key,value){
                
-               if(value.name.search(exp) != -1 || value.comapany.search(exp) != -1)
+               if(value.name.search(exp) != -1 || value.company.search(exp) != -1)
                {
                  $('#resultm').append('<li class="list-group-item"><img src = "'+value.image+'" class= "img-thumbnail" height=50px width=50px>'+value.name+' | <span class= "text-muted">'+value.company+'</span></li>');
                 
