@@ -1,4 +1,4 @@
-body{
+header{
     background-color: #001b3a;
 }
 .navbar-brand h1{
@@ -160,7 +160,7 @@ body{
 /*1 : extra small devices*/
 @media (max-width: 575.98px) { 
     header{
-        background-color: #001b3a;
+        /* background-color: #001b3a; */
         padding-bottom: 10px;
     }
     .navbar{
@@ -187,7 +187,7 @@ body{
 /*2 : small devices*/
 @media (min-width: 576px) and (max-width: 767.98px) {  
     header{
-        background-color: #001b3a;
+        /* background-color: #001b3a; */
         padding-bottom: 15px;
     }
     .navbar{
