@@ -3,7 +3,7 @@ clk_search=0;
 clk_sm=0;
 $(function () {
 
-  //navbar
+//navbar
 
   $('#tg').click(function togglebtn() {
     clk++;
