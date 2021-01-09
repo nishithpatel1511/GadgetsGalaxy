@@ -12,7 +12,7 @@ $(document).ready(function () {
         success: function (data) {
           $.each(data, function (key, value) {
             if (value.name.search(exp) != -1 || value.company.search(exp) != -1) {
-              $('#result').append('<li class="list-group-item"><img src = "' + value.image + '" class= "img-thumbnail" height=50px width=50px>' + value.name + ' | <span class= "text-muted">' + value.company + '</span></li>');
+              $('#resultm').append('<li class="list-group-item search-li"><img src = "' + value.image + '" height=50px width=50px><div><span>' + value.name + '</span><span>' + value.company + '</span></div></li>');
             }
           });
         },
@@ -37,7 +37,7 @@ $(document).ready(function () {
           $.each(data, function (key, value) {
 
             if (value.name.search(exp) != -1 || value.company.search(exp) != -1) {
-              $('#resultt').append('<li class="list-group-item"><img src = "' + value.image + '" class= "img-thumbnail" height=50px width=50px>' + value.name + ' | <span class= "text-muted">' + value.company + '</span></li>');
+              $('#resultm').append('<li class="list-group-item search-li"><img src = "' + value.image + '" height=50px width=50px><div><span>' + value.name + '</span><span>' + value.company + '</span></div></li>');
 
             }
           });
@@ -62,7 +62,7 @@ $(document).ready(function () {
         success: function (data) {
           $.each(data, function (key, value) {
             if (value.name.search(exp) != -1 || value.company.search(exp) != -1) {
-              $('#resultm').append('<li class="list-group-item"><img src = "' + value.image + '" class= "img-thumbnail" height=50px width=50px>' + value.name + ' | <span class= "text-muted">' + value.company + '</span></li>');
+              $('#resultm').append('<li class="list-group-item search-li"><img src = "' + value.image + '" height=50px width=50px><div><span>' + value.name + '</span><span>' + value.company + '</span></div></li>');
             }
           });
         },
