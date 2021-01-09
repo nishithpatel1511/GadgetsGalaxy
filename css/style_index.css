@@ -222,7 +222,7 @@ body{
 /*5 : extra large devices*/
 @media (min-width: 1200px) { 
     #menubar{
-        padding-right: 40%;
+        padding-right: 29%;
     }
 }
 
