@@ -167,6 +167,12 @@ header{
     width: 50%;
     margin-left: 47%;
 }
+#result{
+    width: 97%;
+    margin-left: 2%;
+    border-radius: 10px;
+    margin-top: -50px;
+}
 /*media query*/
 
 
