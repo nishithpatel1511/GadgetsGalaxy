@@ -7,7 +7,7 @@ $(document).ready(function () {
     $('#result').html('');
     if (s != "") {
       $.ajax({
-        url: 'https://nishithpatel1511.github.io/Gadgetworld/js/search/mobile.json',
+        url: 'https://nishithpatel1511.github.io/GadgetsGalaxy/js/search/mobile.json',
         dataType: 'json',
         success: function (data) {
           $.each(data, function (key, value) {
@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('#resultt').html('');
     if (s != "") {
       $.ajax({
-        url: 'https://nishithpatel1511.github.io/Gadgetworld/js/search/mobile.json',
+        url: 'https://nishithpatel1511.github.io/GadgetsGalaxy/js/search/mobile.json',
         dataType: 'json',
         success: function (data) {
           $.each(data, function (key, value) {
@@ -57,7 +57,7 @@ $(document).ready(function () {
     $('#resultm').html('');
     if (s != "") {
       $.ajax({
-        url: 'https://nishithpatel1511.github.io/Gadgetworld/js/search/mobile.json',
+        url: 'https://nishithpatel1511.github.io/GadgetsGalaxy/js/search/mobile.json',
         dataType: 'json',
         success: function (data) {
           $.each(data, function (key, value) {
