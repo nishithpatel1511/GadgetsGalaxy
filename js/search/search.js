@@ -35,10 +35,8 @@ $(document).ready(function () {
         dataType: 'json',
         success: function (data) {
           $.each(data, function (key, value) {
-
             if (value.name.search(exp) != -1 || value.company.search(exp) != -1) {
               $('#resultt').append('<li class="list-group-item search-li"><img src = "' + value.image + '" height=55px width=55px><div><span>' + value.name + '</span><span>' + value.company + '</span></div></li>');
-
             }
           });
         },
@@ -50,7 +48,7 @@ $(document).ready(function () {
       });
     }
   });
-
+//mobile
   $('#Searchm').keyup(function () {
     var s = $('#Searchm').val();
     var exp = new RegExp(s, "i");

@@ -152,7 +152,21 @@ header{
     vertical-align: middle;
     width: calc(100% - 55px);
 }
-
+#resultm{
+    padding-left: 0px;
+    margin-top: 2px;
+    border-radius: 10px;
+}
+.list-group-item{
+    border: 1px solid black;
+}
+#resultt{
+    padding-left: 0px;
+    margin-top: -10px;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 47%;
+}
 /*media query*/
 
 
