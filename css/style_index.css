@@ -56,7 +56,12 @@ header{
     margin-right: 5%;
     margin-top: -12px;
 }
-
+#nav-item-dropdown{
+    position: static !important;
+}
+/* .redbg{
+    background-color: #FF3B3E;
+} */
 
 /*side menu mobile*/
 .opensidepanel{
@@ -247,16 +252,23 @@ header{
 
 /*3 : medium devices*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    #megamenu{
+        margin-top: -17px;
+    }
 }
 
 /*4 : large devices*/
 @media (min-width: 992px) and (max-width: 1199.98px) { 
+    #megamenu{
+        margin-top: -9px;
+    }
 }
 
 /*5 : extra large devices*/
 @media (min-width: 1200px) { 
-    #menubar{
-        padding-right: 29%;
+    
+    #megamenu{
+        margin-top: -8px;
     }
 }
 
