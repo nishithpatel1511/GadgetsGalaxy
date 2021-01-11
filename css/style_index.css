@@ -1,5 +1,7 @@
 header{
-    background-color: #001b3a;
+    background-color: #06243D;
+    /* background-color: #001b3a; */
+    /* background-color: #0C2A43; */
 }
 .navbar-brand h1{
     padding-left: 30px;
@@ -15,6 +17,7 @@ header{
 }
 #menubar{
     justify-content: space-evenly;
+    margin-top: 10px;
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link.active, 
@@ -41,6 +44,17 @@ header{
 }
 #tg,#tgsm{
     color: whitesmoke;
+}
+
+
+/*megamenu*/
+#megamenu{
+    background-color: #d3d3d3;
+    position: absolute;
+    width: 90%; 
+    margin-left: 5%; 
+    margin-right: 5%;
+    margin-top: -12px;
 }
 
 
@@ -92,11 +106,9 @@ header{
     color: orange;
     padding-left: 0px ;
     text-decoration: none;
-    margin-top: 15px;
     text-align: center;
     font-size: 15PX;
 }
-
 
 /*title*/
 .brand {
@@ -122,8 +134,6 @@ header{
     100%{font-size: 0px;}
 }
 
-
-/*megamenu*/
 
 /* search */
 #search-mobile{
@@ -185,6 +195,9 @@ header{
     .navbar{
         padding-bottom: 0px;
     }
+    .nav-link{
+        margin-top: 15px;
+    }
     body{
         background-color: whitesmoke;
     }
@@ -210,6 +223,9 @@ header{
     }
     .navbar{
         padding-bottom: 0px;
+    }
+    .nav-link{
+        margin-top: 15px;
     }
     .dropdown-menu {
         margin-left: 20px !important;
