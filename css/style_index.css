@@ -55,9 +55,14 @@ header{
     margin-left: 5%; 
     margin-right: 5%;
     margin-top: -12px;
+    border: 1px solid black;
 }
 #nav-item-dropdown{
     position: static !important;
+}
+#megamenu-list li a{
+    text-decoration: none;
+    color: black;
 }
 /* .redbg{
     background-color: #FF3B3E;
@@ -114,6 +119,15 @@ header{
     text-align: center;
     font-size: 15PX;
 }
+.nav-item a:hover {
+    background-color: whitesmoke!important;
+    color: #FF3B3E !important;
+}
+.nav-item a.show {
+    color:whitesmoke!important;
+    background-color: #FF3B3E!important;
+    border: 1px solid black;
+  }
 
 /*title*/
 .brand {
@@ -253,7 +267,7 @@ header{
 /*3 : medium devices*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
     #megamenu{
-        margin-top: -17px;
+        margin-top: -15px;
     }
 }
 
