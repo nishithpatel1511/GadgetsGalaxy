@@ -1,0 +1,93 @@
+[
+    {
+        "apple":[
+            {
+                "name":"Iphone 12",
+                "link": "https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/apple/iphone12.html"
+            },
+            {
+                "name":"Iphone 12 mini",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/apple/iphone12mini.html"
+            },
+            {
+                "name":"Iphone 12 pro",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/apple/iphone12pro.html"
+            },
+            {
+                "name":"Iphone 12 pro max",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/apple/iphone12promax.html"
+            },
+            {
+                "name":"Iphone 11 pro",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/apple/iphone11pro.html"
+            }
+
+        ],
+        "samsung":[    
+            {
+                "name":"Galaxy S20 FE",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/s20fe.html"
+            },
+            {
+                "name":"Galaxy S20 Ultra",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/s20ultra.html"
+            },
+            {
+                "name":"Galaxy Z fold 2",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/zfold2.html"
+            },
+            {
+                "name":"Galaxy note 20 Ultra",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/note20ultra.html"
+            },
+            {
+                "name":"Galaxy M51",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/m51.html"
+            }
+        ],
+        "google":[
+            {
+                "name":"Pixel 5",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel5.hhtml"
+            },
+            {
+                "name":"Pixel 4a",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel4a.html"
+            },
+            {
+                "name":"Pixel 4",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel4.html"
+            },
+            {
+                "name":"Pixel 3",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel3.html"
+            },
+            {
+                "name":"Pixel 2",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel2.html"
+            }
+        ],
+        "nokia":[
+            {
+                "name":"Nokia 9",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/nokia/9.hhtml"
+            },
+            {
+                "name":"Nokia 5.3",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/nokia/5.3.hhtml"
+            },
+            {
+                "name":"Nokia 2.3",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/nokia/2.3.hhtml"
+            },
+            {
+                "name":"Nokia 3.2",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/nokia/3.2.hhtml"
+            },
+            {
+                "name":"Nokia 6.1",
+                "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/nokia/6.1.hhtml"
+            }
+        ]
+    }
+]
