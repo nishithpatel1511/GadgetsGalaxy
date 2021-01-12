@@ -43,13 +43,13 @@ header{
     padding-right: 5px;
 }
 #tg,#tgsm{
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
 }
 
 
 /*megamenu*/
 #megamenu{
-    background-color: #d3d3d3;
+    background-color: #ebe9e9;
     position: absolute;
     width: 90%; 
     margin-left: 5%; 
@@ -127,6 +127,9 @@ header{
     color:whitesmoke!important;
     background-color: #FF3B3E!important;
     border: 1px solid black;
+  }
+  .nav-item{
+      position: static!important;
   }
 
 /*title*/
