@@ -548,12 +548,15 @@
         dataType: 'json',
         success: function (data) {
           $.each(data, function (key, value) {
-            if ($('#megamenu-title').text() == key) {
-              $.each(value, function (k, v) {
-                // $('#megamenu-list').append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
-                console.log("hello");
+
+            $.each(value, function (ke, ve) {
+              if ($('#megamenu-title').text() == '') {
+                $('#megamenu-title').html(ke);//ke company nanme from json
+              }
+              $.each(ve, function (k, v) {
+                $('#megamenu-list').append('<li><a href="' + v.link + '">' + v.name + '</a></li>');//v.name product name v.link == link
               });
-            }
+            });
           });
         }
       });
