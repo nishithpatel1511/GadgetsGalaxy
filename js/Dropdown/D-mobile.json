@@ -1,6 +1,6 @@
 [
     {
-        "apple":[
+        "Apple":[
             {
                 "name":"Iphone 12",
                 "link": "https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/apple/iphone12.html"
@@ -23,7 +23,7 @@
             }
 
         ],
-        "samsung":[    
+        "Samsung":[    
             {
                 "name":"Galaxy S20 FE",
                 "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/s20fe.html"
@@ -45,7 +45,7 @@
                 "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/samsung/m51.html"
             }
         ],
-        "google":[
+        "Google":[
             {
                 "name":"Pixel 5",
                 "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel5.hhtml"
@@ -67,7 +67,7 @@
                 "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/google/pixel2.html"
             }
         ],
-        "nokia":[
+        "Nokia":[
             {
                 "name":"Nokia 9",
                 "link":"https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/nokia/9.hhtml"
