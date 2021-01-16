@@ -8,20 +8,23 @@ $(function () {
 
       $.each(data, function (keys, value) {
 
-        $('#megamenu-temp').html('<div class="row" id="megamenu-row-' + r + '"></div>');
+
+        $('#megamenu-temp').append('<div class="row megamenu-row" id="mrow-' + r + '"></div>');
 
         $.each(value, function (key, val) {
         
-           row = '#megamenu-row-' + r;
-           $(row).append('<div class="col-3" id="megamenu-col-' + l + '" style="text-align: center;"></div>');
-          col = '#megamenu-col-' + l;
-          $(col).html('<h3 id="megamenu-title">' + key + '</h3><ul class="list-unstyled" id="megamenu-list-' + l + '"></ul>');
-           list = '#megamenu-list-' + l;
-          $.each(val, function (k, v) {
-            $(list).append('<li><a href="' + v.link + '">' + v.name +'</a></li>');
-           });
-          l++;
+          row = '#mrow-' + r;
+          $(row).append('<div class="col-3 megamenu-col" id="mcol-' + l + '" style="text-align: center;"></div>');
+          col = '#mcol-' + l;
+          $(col).append('<h3 id="megamenu-title">' + key + '</h3><ul class="list-unstyled" id="megamenu-list-' + l + '"></ul>');
+          // list = '#megamenu-list-' + l;
+          // $.each(val, function (k, v) {
+          //    $(list).append('<li><a href="' + v.link + '">' + v.name +'</a></li>');
+          //   });
+           l++;
         });
+         r++;
+         l=1;
       });
     }
   });
