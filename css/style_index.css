@@ -76,8 +76,8 @@ header{
     margin-right: 0px;
     
 }
-.megamenu-col-5{
-    width: 20%;
+.megamenu-col-1{
+    width: 100%;
     flex: 0 0 auto;
 }
 .megamenu-col-4{
@@ -302,7 +302,7 @@ header{
 
 /*3 : medium devices*/
 @media (min-width: 768px) and (max-width: 991.98px) { 
-    #megamenu{
+    .megamenu{
         margin-top: -15px;
     }
 }
