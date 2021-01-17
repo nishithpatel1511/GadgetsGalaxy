@@ -3,7 +3,7 @@ l = 1;
 n = 0;
 $(function () {
   $.ajax({
-    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/D-mobile.json",
+    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/mobile.json",
     dataType: 'JSON',
     success: function (data) {
 
