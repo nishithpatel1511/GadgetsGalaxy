@@ -48,7 +48,7 @@ header{
 
 
 /*megamenu*/
-#megamenu{
+/* #megamenu{
     background-color: #ebe9e9;
     position: absolute;
     width: 90%; 
@@ -56,25 +56,35 @@ header{
     margin-right: 5%;
     margin-top: -12px;
     border: 1px solid black;
-}
+} */
 /* temp */
-#megamenu-temp{
+.megamenu{
     background-color: #ebe9e9;
     position: absolute;
     width: 90%; 
     margin-left: 5%; 
     margin-right: 5%;
-    margin-top: -12px;
+    margin-top: -10px;
     border: 1px solid black;
 }
 
 #nav-item-dropdown{
     position: static !important;
 }
-#megamenu-list li a{
+.megamenu-row{
+    margin-left: 0px;
+    margin-right: 0px;
+    
+}
+#megamenu-title{
+    margin-bottom: 0px;
+}
+.megamenu-list li a{
     text-decoration: none;
     color: black;
+    font-size: 0.8rem;
 }
+
 /* .redbg{
     background-color: #FF3B3E;
 } */
