@@ -80,12 +80,28 @@ header{
     width: 100%;
     flex: 0 0 auto;
 }
+.megamenu-col-2{
+    width: 50%;
+    flex: 0 0 auto;
+}
+.megamenu-col-3{
+    width: 33.33%;
+    flex: 0 0 auto;
+}
 .megamenu-col-4{
     width: 25%;
     flex: 0 0 auto;
 }
+.megamenu-col-5{
+    width: 20%;
+    flex: 0 0 auto;
+}
 .megamenu-col-6{
     width: 16.66%;
+    flex: 0 0 auto;
+}
+.megamenu-col-8{
+    width: 12.5%;
     flex: 0 0 auto;
 }
 #megamenu-title{
