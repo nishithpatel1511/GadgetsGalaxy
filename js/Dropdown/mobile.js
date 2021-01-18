@@ -5,7 +5,7 @@ temp = 0;
 count = 0;
 $(function () {
   $.ajax({
-    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/temp_D-mobile.json",
+    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/camera.json",
     dataType: 'JSON',
     success: function (data) {
 
