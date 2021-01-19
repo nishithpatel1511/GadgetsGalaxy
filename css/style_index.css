@@ -10,6 +10,7 @@ header{
 .navbar{
     margin-top: -5px;
     margin-bottom: -5px;
+    padding-top: 2px;
 }
 #nav-btn{
     width: 1em;
@@ -74,7 +75,11 @@ header{
 .megamenu-row{
     margin-left: 0px;
     margin-right: 0px;
-    
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.megamenu-row >*{
+    padding-left: 25px;
 }
 .megamenu-col-1{
     width: 100%;
@@ -106,6 +111,7 @@ header{
 }
 #megamenu-title{
     margin-bottom: 0px;
+    padding-left: 8px;
 }
 .megamenu-list li a{
     text-decoration: none;
