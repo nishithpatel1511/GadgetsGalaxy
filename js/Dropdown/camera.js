@@ -1,7 +1,7 @@
 r = 0; l = 1; n = 0; temp = 0;
 $(function () {
   $.ajax({
-    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/camera.json",
+    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/json/camera.json",
     dataType: 'JSON',
     success: function (data) {
 
