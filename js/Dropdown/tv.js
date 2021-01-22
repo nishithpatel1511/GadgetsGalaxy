@@ -13,28 +13,28 @@ $(function () {
         if (window.innerWidth < 992) {
           if ((l % 4) == 1) {
             r++;
-            $('#megamenu-tv').append('<div class="row megamenu-row" id="tvrow-' + r + '"></div>');
+            $('#megamenu-tv').append('<div class="row megamenu-row" id="tv-row-' + r + '"></div>');
             l = 1;
           }
 
           if ((temp % 4 == 2) & (n == 2)) {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-4" id="' + r + '-tvcol-0 "></div>');
-            $(row).append('<div class="megamenu-col-4" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-4" id="' + r + '-tv-col-0 "></div>');
+            $(row).append('<div class="megamenu-col-4" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
             n--;
           }
           else {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-4" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-4" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -46,41 +46,41 @@ $(function () {
         else if (window.innerWidth < 1200 & window.innerWidth >= 992) {
           if (l % 5 == 1) {
             r++;
-            $('#megamenu-tv').append('<div class="row megamenu-row" id="tvrow-' + r + '"></div>');
+            $('#megamenu-tv').append('<div class="row megamenu-row" id="tv-row-' + r + '"></div>');
             l = 1;
           }
 
           if((temp%5==2)&(n==2)){
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-5" id="' + r + '-tvcol-0"></div>');
-            $(row).append('<div class="megamenu-col-5" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-0"></div>');
+            $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(row).append('<div class="megamenu-col-5" id="' + r + '-tvcol-00"></div>');
+            $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-00"></div>');
             n--;
           }
           else if ((temp % 5 == 3) & (n == 3)) {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-5" id="' + r + '-tvcol-0 "></div>');
-            $(row).append('<div class="megamenu-col-5" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-0 "></div>');
+            $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
             n--;
           }
           else {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-5" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -92,40 +92,40 @@ $(function () {
         else if (window.innerWidth >= 1200) {
           if ((l % 6) == 1) {
             r++;
-            $('#megamenu-tv').append('<div class="row megamenu-row" id="tvrow-' + r + '"></div>');
+            $('#megamenu-tv').append('<div class="row megamenu-row" id="tv-row-' + r + '"></div>');
             l = 1;
           }
 
           if ((temp % 6 == 2) & (n == 2)) {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-3" id="' + r + '-tvcol-0 "></div>');
-            $(row).append('<div class="megamenu-col-6" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-3" id="' + r + '-tv-col-0 "></div>');
+            $(row).append('<div class="megamenu-col-6" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
             n--;
           }
           else if ((temp % 6 == 4) & (n == 4)) {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-6" id="' + r + '-tvcol-0 "></div>');
-            $(row).append('<div class="megamenu-col-6" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-6" id="' + r + '-tv-col-0 "></div>');
+            $(row).append('<div class="megamenu-col-6" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
             n--;
           }
           else {
-            row = '#tvrow-' + r;
-            $(row).append('<div class="megamenu-col-6" id="' + r + '-tvcol-' + l + '"></div>');
-            col = '#' + r + '-tvcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tvlist-' + l + '"></ul>');
-            list = '#' + r + '-tvlist-' + l;
+            row = '#tv-row-' + r;
+            $(row).append('<div class="megamenu-col-6" id="' + r + '-tv-col-' + l + '"></div>');
+            col = '#' + r + '-tv-col-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-tv-list-' + l + '"></ul>');
+            list = '#' + r + '-tv-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
