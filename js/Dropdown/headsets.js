@@ -1,10 +1,7 @@
-r = 0; l = 1; n = 0; temp = 0;
 $(function () {
-  $.ajax({
-    url: "https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/json/headsets.json",
-    dataType: 'JSON',
-    success: function (data) {
-
+  var r = 0; var l = 1; var n = 0;
+  $.getJSON("https://nishithpatel1511.github.io/GadgetsGalaxy/js/Dropdown/json/tablet.json",
+   function (data) {
       $.each(data, function (key, value) {
         n++;
       });
@@ -25,8 +22,8 @@ $(function () {
             $(row).append('<div class="megamenu-col-4" id="' + r + '-hcol-0 "></div>');
             $(row).append('<div class="megamenu-col-4" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -36,8 +33,8 @@ $(function () {
             row = '#hrow-' + r;
             $(row).append('<div class="megamenu-col-4" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -58,8 +55,8 @@ $(function () {
             $(row).append('<div class="megamenu-col-5" id="' + r + '-hcol-0"></div>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -71,8 +68,8 @@ $(function () {
             $(row).append('<div class="megamenu-col-5" id="' + r + '-hcol-0 "></div>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -82,8 +79,8 @@ $(function () {
             row = '#hrow-' + r;
             $(row).append('<div class="megamenu-col-5" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -104,8 +101,8 @@ $(function () {
             $(row).append('<div class="megamenu-col-3" id="' + r + '-hcol-0 "></div>');
             $(row).append('<div class="megamenu-col-6" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -116,8 +113,8 @@ $(function () {
             $(row).append('<div class="megamenu-col-6" id="' + r + '-hcol-0 "></div>');
             $(row).append('<div class="megamenu-col-6" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -127,8 +124,8 @@ $(function () {
             row = '#hrow-' + r;
             $(row).append('<div class="megamenu-col-6" id="' + r + '-hcol-' + l + '"></div>');
             col = '#' + r + '-hcol-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-list-' + l + '"></ul>');
-            list = '#' + r + '-list-' + l;
+            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-hlist-' + l + '"></ul>');
+            list = '#' + r + '-hlist-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
@@ -138,6 +135,5 @@ $(function () {
 
         l++;
       });
-    }
   });
 });
