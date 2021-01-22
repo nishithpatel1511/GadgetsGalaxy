@@ -28,6 +28,7 @@ $(function mobile () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html">view more..</a></li>');
             n--;
           }
           else {
