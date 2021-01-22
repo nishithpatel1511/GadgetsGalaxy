@@ -23,23 +23,24 @@ $(function mobile () {
             $(row).append('<div class="megamenu-col-4" id="' + r + '-mobile-col-0 "></div>');
             $(row).append('<div class="megamenu-col-4" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html">view more..</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else {
             row = '#mobile-row-' + r;
             $(row).append('<div class="megamenu-col-4" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
         }
@@ -57,11 +58,12 @@ $(function mobile () {
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-0"></div>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-00"></div>');
             n--;
           }
@@ -71,22 +73,24 @@ $(function mobile () {
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-0 "></div>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else {
             row = '#mobile-row-' + r;
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
         }
@@ -104,11 +108,12 @@ $(function mobile () {
             $(row).append('<div class="megamenu-col-3" id="' + r + '-mobile-col-0 "></div>');
             $(row).append('<div class="megamenu-col-6" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else if ((temp % 6 == 4) & (n == 4)) {
@@ -116,22 +121,24 @@ $(function mobile () {
             $(row).append('<div class="megamenu-col-6" id="' + r + '-mobile-col-0 "></div>');
             $(row).append('<div class="megamenu-col-6" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else {
             row = '#mobile-row-' + r;
             $(row).append('<div class="megamenu-col-6" id="' + r + '-mobile-col-' + l + '"></div>');
             col = '#' + r + '-mobile-col-' + l;
-            $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+            $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
             list = '#' + r + '-mobile-list-' + l;
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
         }
@@ -146,7 +153,7 @@ $(function mobile () {
           //   row = '#mobile-row-' + r;
           //   $(row).append('<div class="megamenu-col-1" id="' + r + '-mobile-col-' + l + '"></div>');
           //   col = '#' + r + '-mobile-col-' + l;
-          //   $(col).append('<h5 id="megamenu-title">' + key + '</h5><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
+          //   $(col).append('<h6 id="megamenu-title">' + key + '</h6><ul class="list-unstyled megamenu-list" id="' + r + '-mobile-list-' + l + '"></ul>');
           //   list = '#' + r + '-mobile-list-' + l;
           //   $.each(value, function (k, v) {
           //     $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
