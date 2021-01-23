@@ -27,7 +27,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else {
@@ -39,7 +39,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
         }
@@ -62,7 +62,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-tv-col-00"></div>');
             n--;
           }
@@ -76,7 +76,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else {
@@ -88,7 +88,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
         }
@@ -111,7 +111,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else if ((temp % 6 == 4) & (n == 4)) {
@@ -124,7 +124,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
           else {
@@ -136,7 +136,7 @@ $(function () {
             $.each(value, function (k, v) {
               $(list).append('<li><a href="' + v.link + '">' + v.name + '</a></li>');
             });
-            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key + '.html" style="font-size : 0.7rem">...view more...</a></li>');
+            $(list).append('<li><a href="https://nishithpatel1511.github.io/GadgetsGalaxy/mobile/' + key.toLowerCase() + '.html" style="font-size : 0.7rem">...view more...</a></li>');
             n--;
           }
         }
