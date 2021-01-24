@@ -248,13 +248,15 @@ header{
     border: 1px solid black;
 }
 #resultt{
+    position: absolute;
     padding-left: 0px;
     margin-top: -10px;
     border-radius: 10px;
-    width: 50%;
-    margin-left: 47%;
+    width: 55%;
+    margin-left: 42%;
 }
 #result{
+    position: absolute;
     width: 97%;
     margin-left: 2%;
     border-radius: 10px;
@@ -274,9 +276,6 @@ header{
     }
     .nav-link{
         margin-top: 15px;
-    }
-    body{
-        background-color: whitesmoke;
     }
     .navbar-brand h1{
         padding-left: 12px;
@@ -308,9 +307,6 @@ header{
         margin-left: 20px !important;
         background-color: gray;
       }
-    body{
-        background-color: whitesmoke;
-    }
     .navbar-brand h1{
         padding-left: 12px;
     }
