@@ -243,7 +243,6 @@ header{
     padding-left: 0px;
     margin-top: 2px;
     border-radius: 10px;
-    z-index: 2;
 }
 .list-group-item{
     border: 1px solid black;
@@ -255,7 +254,6 @@ header{
     border-radius: 10px;
     width: 55%;
     margin-left: 42%;
-    z-index: 2;
 }
 #result{
     position: absolute;
@@ -263,7 +261,6 @@ header{
     margin-left: 2%;
     border-radius: 10px;
     margin-top: -50px;
-    z-index: 2;
 }
 /*media query*/
 
