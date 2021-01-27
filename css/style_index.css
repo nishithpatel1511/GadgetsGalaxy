@@ -1,3 +1,9 @@
+.carousel-control-next-icon,
+.carousel-control-prev-icon
+{
+    background-image: none;
+}
+
 header{
     background-color: #06243D;
     /* background-color: #001b3a; */
