@@ -1,3 +1,6 @@
+.slider{
+    position: absolute;
+}
 .carousel
 {
     z-index: -1;
@@ -58,4 +61,8 @@
 }
 
 @media (min-width: 1200px) { 
+    .description-news
+    {
+        font-size: 15px;
+    }
 }
