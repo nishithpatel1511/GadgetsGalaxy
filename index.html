@@ -440,6 +440,7 @@
     crossorigin="anonymous"></script> -->
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
+    $(function(){
     slide = 1;
     function cb() {
       var dots = document.getElementsByClassName("dot");
@@ -471,6 +472,7 @@
     }
     cb();
     t = setInterval(cb, 5050);
+  });
   </script>
 </body>
 
