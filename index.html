@@ -307,8 +307,8 @@
   </div>
 
 
-    
-  
+
+
   <div id="carouselExampleControls" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -421,50 +421,55 @@
       <img src="image/Mobile/Apple/iphone12/1.jpg" class="d-block w-100" alt="...">
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-    <span aria-hidden="true"><i class="fas fa-angle-left" style="color: black;font-size: 35px;"></i></span>
-    </span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-    <span aria-hidden="true"><i class="fas fa-angle-right" style="color: black;font-size: 35px;"></i></span>
-  </a>
+
+  <div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+      <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
+          style="color: black;font-size: 35px;"></i></span>
+      </span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+      <span aria-hidden="true"><i class="fas fa-angle-right d-none d-md-block"
+          style="color: black;font-size: 35px;"></i></span>
+    </a>
+    <div>
 
 
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script> -->
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script>
-    slide = 1;
-    function s1() {
-      slide = 1;
-      chgbtn();
-    }
-    function s2() {
-      slide = 2;
-      chgbtn();
-    }
-    function s3() {
-      slide = 3;
-      chgbtn();
-
-    }
-    chgbtn();
-    function chgbtn() {
-      var i;
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      dots[slide - 1].className += " active";
-      slide++;
-      if (slide > 3) {
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script>
         slide = 1;
-      }
-      setTimeout(chgbtn, 5050);
-    }
-  </script>
+        function s1() {
+          slide = 1;
+          chgbtn();
+        }
+        function s2() {
+          slide = 2;
+          chgbtn();
+        }
+        function s3() {
+          slide = 3;
+          chgbtn();
+
+        }
+        chgbtn();
+        function chgbtn() {
+          var i;
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          dots[slide - 1].className += " active";
+          slide++;
+          if (slide > 3) {
+            slide = 1;
+          }
+          setTimeout(chgbtn, 5050);
+        }
+      </script>
 </body>
 
 </html>
