@@ -26,6 +26,15 @@
   <script src="js/Dropdown/tv.js"></script>
   <!-- <script src="js/index.js"></script> -->
   <script src="js/Dropdown/headsets.js"></script>
+
+  <style>
+    .fa-angle-down{
+      
+      /* transform:rotate(180deg);
+      transition-duration: 0.3s; */
+    }
+    
+  </style>
 </head>
 
 <body>
@@ -56,10 +65,10 @@
               <a class="nav-link active" aria-current="page"
                 href="https://nishithpatel1511.github.io/GadgetsGalaxy/">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            <li class="nav-item dropdown mob-li">
+              <a class="nav-link mob" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Mobile
+                Mobile&nbsp;&nbsp;<i class="fas fa-angle-down"></i>
               </a>
               <div class="dropdown-menu megamenu" aria-labelledby="navbarDropdown" id="megamenu-mobile"> </div>
             </li>
@@ -434,34 +443,6 @@
   </div>
 
 
-  <!-- <div id="hello" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#hello" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#hello" data-bs-slide-to="1"></li>
-      <li data-bs-target="#hello" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="image/Mobile/Apple/iphone11/1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="image/Mobile/Apple/iphone12/1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="image/Mobile/Apple/iphone12pro/1.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-  </div> -->
-
-
   <!-- <div id="carouselExampleCaptions n2" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
       <li data-bs-target="#carouselExampleCaptions n2" data-bs-slide-to="0" class="active"></li>
@@ -503,7 +484,13 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script> -->
+    
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(function(){
+      
+    });
+  </script>
 </body>
 
 </html>

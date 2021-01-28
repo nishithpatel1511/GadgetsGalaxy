@@ -24,7 +24,8 @@ header{
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-nav .nav-link.active, 
-.navbar-light .navbar-nav .show>.nav-link
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link:focus
 {
     color:orange;
 }
@@ -245,6 +246,7 @@ header{
     padding-left: 0px;
     margin-top: 2px;
     border-radius: 10px;
+    z-index: 1;
 }
 .list-group-item{
     border: 1px solid black;
@@ -256,6 +258,7 @@ header{
     border-radius: 10px;
     width: 55%;
     margin-left: 42%;
+    z-index: 1;
 }
 #result{
     position: absolute;
@@ -263,6 +266,7 @@ header{
     margin-left: 2%;
     border-radius: 10px;
     margin-top: -50px;
+    z-index: 1;
 }
 /*media query*/
 

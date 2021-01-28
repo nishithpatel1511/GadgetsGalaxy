@@ -4,7 +4,6 @@ clk_sm=0;
 $(function () {
 
 //navbar
-
   $('#tg').click(function togglebtn() {
     clk++;
     $('#tg').toggleClass('fa-times');
@@ -158,4 +157,22 @@ $(function () {
     }
   });
 
+
+  $('.nav-item').mouseover(function(){
+    $(this).find('.megamenu').addClass('show');
+    $(this).find('.nav-link').addClass('show');
+    $(this).find('.fa-angle-down').css({"transform":"rotate(180deg)","transition-duration" : "0.3s"});
+  });
+  $('.nav-item').mouseleave(function(){
+      $(this).find('.megamenu').removeClass('show');
+    $(this).find('.nav-link').removeClass('show');  
+    $(this).find('.fa-angle-down').css({"transform":"rotate(-180deg)","transition-duration" : "0.3s"});
+
+  });
+  $('.nav-item').click(function(){
+    $(this).find('.megamenu').removeClass('show');
+    $(this).find('.nav-link').removeClass('show');    
+    $(this).find('.fa-angle-down').css({"transform":"rotate(-180deg)","transition-duration" : "0.3s"});
+
+  });
 });

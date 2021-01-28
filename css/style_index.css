@@ -1,5 +1,7 @@
 .slider{
     position: sticky;
+    z-index: 0;
+    margin: 15px 2px;
 }
 .carousel
 {
