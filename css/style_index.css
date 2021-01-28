@@ -3,6 +3,39 @@
 {
     background-image: none;
 }
+.dot {
+    color: #bbb;
+  }
+
+  .dot.active {
+    color: black;
+  }
+
+  .carousel-item .row {
+    padding: 0% 5%;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+  }
+
+  .img-news img {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    height: 200px;
+
+  }
+
+  .col-2 div {
+    text-align: justify;
+  }
+
+
+
+
+
 
 header{
     background-color: #06243D;
