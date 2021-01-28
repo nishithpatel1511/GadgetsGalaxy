@@ -20,13 +20,9 @@
     width: 5%;
   }
 
-  .img-news img {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-    height: 200px;
-
-  }
+   .img-news img {
+    width: 100%;
+  } 
 
   .col-2 div {
     text-align: justify;
@@ -361,6 +357,10 @@ header{
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .megamenu{
         margin-top: -15px;
+    }
+    .description-news
+    {
+        font-size: 12px;
     }
 }
 
