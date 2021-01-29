@@ -1,5 +1,15 @@
-
-
+.cmenu{
+    transform: rotateY('180deg');
+    animation-name: ups;
+    animation-duration: 0.3s;
+}
+@keyframes ups{
+    0%{transform: rotate(90deg);}
+}
+.fa-angle-down
+{
+    transition-duration: 0.3s;
+}
 header{
     background-color: #06243D;
     /* background-color: #001b3a; */
