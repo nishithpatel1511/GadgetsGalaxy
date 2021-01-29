@@ -27,6 +27,11 @@
   <!-- <script src="js/index.js"></script> -->
   <script src="js/Dropdown/headsets.js"></script>
 
+  <style>
+    .gap-pr{
+      overflow: visible;
+    }
+  </style>
 </head>
 
 <body>
@@ -430,8 +435,120 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script> -->
-    
+
+  <!-- temp -->
+
+  <div class="slider carousel d-none d-md-block" style="overflow-x: hidden;">
+    <div class="gap-pr carousel-inner">
+      <div class="sw carousel-item" style="display: block;">
+        <div class="row product-slider" style="display: flex; flex-wrap: nowrap;padding: 10px;transition-duration: 1s;">
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone12/1.jpg">
+            </div>
+            <div class="description-news">
+              This card has supporting text below as a natural lead-in to additional content
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone12/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone12/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone12/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone12/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone12/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+          <div class="pr-col col-2" >
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <span>This card has supporting text below as a natural lead-in to additional content</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="prv()">
+    prev
+  </button>
+<button onclick="nxt()">
+  next
+</button>
+
+
+
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- temp -->
+
+  <script>
+
+
+    len = $('.product-slider').find('.pr-col').outerWidth();
+    
+    len = len * 8;
+    $('.sw').css("width", len);
+    $('.pr-col.col-2').css("width",(len/8));
+
+
+    function prv() {
+      diff = len - window.innerWidth;
+      d = "translateX(-" + diff + "px)";
+      $('.product-slider').css("transform", "translateX(0px)");
+    }
+    function nxt() {
+      diff = len - window.innerWidth;
+      d = "translateX(-" + diff + "px)";
+      $('.product-slider').css("transform", d);
+    }
+
+
+
+  </script>
 </body>
 
 </html>

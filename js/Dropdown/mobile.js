@@ -68,7 +68,6 @@ $(function mobile () {
             n--;
           }
           else if ((temp % 5 == 3) & (n == 3)) {
-            console.log("hello "+r);
             row = '#mobile-row-' + r;
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-0 "></div>');
             $(row).append('<div class="megamenu-col-5" id="' + r + '-mobile-col-' + l + '"></div>');
