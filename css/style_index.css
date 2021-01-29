@@ -3,9 +3,25 @@
     z-index: 0;
     margin: 15px 2px;
 }
+
+/* temp */
+.gap-pr {
+    overflow: visible;
+    width: 100%;
+    padding: 0% 5%;
+  }
+
+  .description-news h6 {
+    text-align: center;
+  }
+
+
+#carouselExampleIndicators{
+    z-index: -1;
+}
 .carousel
 {
-    z-index: -1;
+    z-index: 0;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon
@@ -25,6 +41,7 @@
 .carousel-control-next,
 .carousel-control-prev {
   width: 5%;
+  text-decoration: none;
 }
  .img-news img {
   width: 100%;
