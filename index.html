@@ -443,6 +443,55 @@
       <div class="sw">
         <div class="row product-slider"
           style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s;">
+
+          <div class="pr-col col-2">
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <h6>Iphone 12</h6>
+            </div>
+          </div>
+          <div class="pr-col col-2">
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <h6>Iphone 12</h6>
+            </div>
+          </div>
+          <div class="pr-col col-2">
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <h6>Iphone 12</h6>
+            </div>
+          </div>
+          <div class="pr-col col-2">
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <h6>Iphone 12</h6>
+            </div>
+          </div>
+          <div class="pr-col col-2">
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <h6>Iphone 12</h6>
+            </div>
+          </div>
+          <div class="pr-col col-2">
+            <div class="img-news">
+              <img src="image/Mobile/Apple/iphone11/1.jpg">
+            </div>
+            <div class="description-news">
+              <h6>Iphone 12</h6>
+            </div>
+          </div>
           <div class="pr-col col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
@@ -521,19 +570,81 @@
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script>
+    // len = $('.product-slider').find('.pr-col').outerWidth();
+    // len = len * 8;
+    // $('.sw').css("width", len);
+    // a = $('.carousel .row').find(".col-2").outerWidth();
+    // $('.product-slider .pr-col').css("width", a);
+
+    // function prv() {
+    //   $('.product-slider').css("transform", "translateX(0px)");
+    // }
+    // function nxt() {
+    //   diff = len - (window.innerWidth * 0.9);
+    //   d = "translateX(-" + diff + "px)";
+    //   $('.product-slider').css("transform", d);
+    // }
+
+    diff=0;
+    n = $('.product-slider .pr-col').length;
+    tempn = n;
     len = $('.product-slider').find('.pr-col').outerWidth();
-    len = len * 8;
+    len = len * n;
     $('.sw').css("width", len);
+
+
     a = $('.carousel .row').find(".col-2").outerWidth();
     $('.product-slider .pr-col').css("width", a);
-
     function prv() {
-      $('.product-slider').css("transform", "translateX(0px)");
+      
+      if (tempn  < 6) {
+        diff = len - (tempn  * (len / n) + (window.innerWidth * 0.9));
+        d = "translateX(-" + diff + "px)";
+        $('.product-slider').css("transform", d);
+        tempn = tempn+6;
+      }
+      else {
+
+        tempn = tempn + 6;
+        diff = diff - window.innerWidth * 0.9;
+        if (diff == 0 || tempn==n)
+        {
+          $('.product-slider').css("transform", "translateX(0px)");
+        }
+        else if(diff > 0) {
+          d = "translateX(-" + diff + "px)";
+          $('.product-slider').css("transform", d);
+        }
+
+        if (tempn > n)
+        {
+          tempn =n;
+        }
+      }
+
+      
     }
     function nxt() {
-      diff = len - (window.innerWidth * 0.9);
-      d = "translateX(-" + diff + "px)";
-      $('.product-slider').css("transform", d);
+
+
+      console.log(tempn);
+      tempn = tempn - 6;
+
+
+
+      if (tempn >= 6) {
+        $('.product-slider').css("transform", "translateX(-" + window.innerWidth * 0.9 + "px)");
+      }
+      else if (tempn < 6 && tempn > 0) {
+        diff = len - (window.innerWidth * 0.9);
+        d = "translateX(-" + diff + "px)";
+        $('.product-slider').css("transform", d);
+      }
+      
+      if(tempn<0)
+      {
+        tempn = tempn+6;
+      }
     }
   </script>
 </body>
