@@ -570,35 +570,21 @@
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    // len = $('.product-slider').find('.pr-col').outerWidth();
-    // len = len * 8;
-    // $('.sw').css("width", len);
-    // a = $('.carousel .row').find(".col-2").outerWidth();
-    // $('.product-slider .pr-col').css("width", a);
-
-    // function prv() {
-    //   $('.product-slider').css("transform", "translateX(0px)");
-    // }
-    // function nxt() {
-    //   diff = len - (window.innerWidth * 0.9);
-    //   d = "translateX(-" + diff + "px)";
-    //   $('.product-slider').css("transform", d);
-    // }
-
     diff=0;
+    a = $('.carousel .row').find(".col-2").outerWidth();
     n = $('.product-slider .pr-col').length;
     tempn = n;
     len = $('.product-slider').find('.pr-col').outerWidth();
     len = len * n;
     $('.sw').css("width", len);
-
-
-    a = $('.carousel .row').find(".col-2").outerWidth();
+    console.log($('.carousel .row').find(".col-2").outerWidth());
     $('.product-slider .pr-col').css("width", a);
+
+
     function prv() {
       
       if (tempn  < 6) {
-        diff = len - (tempn  * (len / n) + (window.innerWidth * 0.9));
+        diff = len - (tempn  * (len / n) + ($('.pr-col').outerWidth())*6);
         d = "translateX(-" + diff + "px)";
         $('.product-slider').css("transform", d);
         tempn = tempn+6;
@@ -606,7 +592,7 @@
       else {
 
         tempn = tempn + 6;
-        diff = diff - window.innerWidth * 0.9;
+        diff = diff - (($('.pr-col').outerWidth())*6);
         if (diff == 0 || tempn==n)
         {
           $('.product-slider').css("transform", "translateX(0px)");
@@ -626,26 +612,21 @@
     }
     function nxt() {
 
-
-      console.log(tempn);
       tempn = tempn - 6;
-
-
-
       if (tempn >= 6) {
-        $('.product-slider').css("transform", "translateX(-" + window.innerWidth * 0.9 + "px)");
+        $('.product-slider').css("transform", "translateX(-" + (($('.pr-col').outerWidth())*6) + "px)");
       }
       else if (tempn < 6 && tempn > 0) {
-        diff = len - (window.innerWidth * 0.9);
+        diff = len - (($('.pr-col').outerWidth())*6);
         d = "translateX(-" + diff + "px)";
         $('.product-slider').css("transform", d);
-      }
-      
+      }  
       if(tempn<0)
       {
         tempn = tempn+6;
       }
     }
+
   </script>
 </body>
 
