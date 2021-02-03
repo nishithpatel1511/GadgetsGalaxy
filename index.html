@@ -570,7 +570,7 @@
   <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    diff=0;
+    diff = 0;
     a = $('.carousel .row').find(".col-2").outerWidth();
     n = $('.product-slider .pr-col').length;
     tempn = n;
@@ -582,48 +582,45 @@
 
 
     function prv() {
-      
-      if (tempn  < 6) {
-        diff = len - (tempn  * (len / n) + ($('.pr-col').outerWidth())*6);
+
+      if (tempn < 6) {
+        diff = len - (tempn * (len / n) + ($('.pr-col').outerWidth()) * 6);
         d = "translateX(-" + diff + "px)";
         $('.product-slider').css("transform", d);
-        tempn = tempn+6;
+        tempn = tempn + 6;
       }
       else {
 
         tempn = tempn + 6;
-        diff = diff - (($('.pr-col').outerWidth())*6);
-        if (diff == 0 || tempn==n)
-        {
+        diff = diff - (($('.pr-col').outerWidth()) * 6);
+        if (diff == 0 || tempn == n) {
           $('.product-slider').css("transform", "translateX(0px)");
         }
-        else if(diff > 0) {
+        else if (diff > 0) {
           d = "translateX(-" + diff + "px)";
           $('.product-slider').css("transform", d);
         }
 
-        if (tempn > n)
-        {
-          tempn =n;
+        if (tempn > n) {
+          tempn = n;
         }
       }
 
-      
+
     }
     function nxt() {
 
       tempn = tempn - 6;
       if (tempn >= 6) {
-        $('.product-slider').css("transform", "translateX(-" + (($('.pr-col').outerWidth())*6) + "px)");
+        $('.product-slider').css("transform", "translateX(-" + (($('.pr-col').outerWidth()) * 6) + "px)");
       }
       else if (tempn < 6 && tempn > 0) {
-        diff = len - (($('.pr-col').outerWidth())*6);
+        diff = len - (($('.pr-col').outerWidth()) * 6);
         d = "translateX(-" + diff + "px)";
         $('.product-slider').css("transform", d);
-      }  
-      if(tempn<0)
-      {
-        tempn = tempn+6;
+      }
+      if (tempn < 0) {
+        tempn = tempn + 6;
       }
     }
 
