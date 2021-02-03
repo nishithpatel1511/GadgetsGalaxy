@@ -439,12 +439,12 @@
       <span aria-hidden="true"><i class="fas fa-angle-right d-none d-md-block"
           style="color: black;font-size: 35px;"></i></span>
     </a>
-    <div class="gap-pr">
-      <div class="sw">
+    <div class="active-slider">
+      <div class="content-slider">
         <div class="row product-slider"
           style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s;">
 
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -452,7 +452,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -460,7 +460,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -468,7 +468,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -476,7 +476,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -484,7 +484,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -492,7 +492,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
             </div>
@@ -500,7 +500,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
             </div>
@@ -508,7 +508,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
             </div>
@@ -516,7 +516,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
             </div>
@@ -524,7 +524,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
             </div>
@@ -532,7 +532,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone12/1.jpg">
             </div>
@@ -540,7 +540,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -548,7 +548,7 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="pr-col col-2">
+          <div class="slider-item col-2">
             <div class="img-news">
               <img src="image/Mobile/Apple/iphone11/1.jpg">
             </div>
@@ -572,18 +572,18 @@
   <script>
     diff = 0;
     a = $('.carousel .row').find(".col-2").outerWidth();
-    n = $('.product-slider .pr-col').length;
+    n = $('.product-slider .slider-item').length;
     tempn = n;
-    len = $('.product-slider').find('.pr-col').outerWidth();
+    len = $('.product-slider').find('.slider-item').outerWidth();
     len = len * n;
-    $('.sw').css("width", len);
-    $('.product-slider .pr-col').css("width", a);
+    $('.content-slider').css("width", len);
+    $('.product-slider .slider-item').css("width", a);
 
 
     function prv() {
 
       if (tempn < 6) {
-        diff = len - (tempn * (len / n) + ($('.pr-col').outerWidth()) * 6);
+        diff = len - (tempn * (len / n) + ($('.slider-item').outerWidth()) * 6);
         d = "translateX(-" + diff + "px)";
         $('.product-slider').css("transform", d);
         tempn = tempn + 6;
@@ -591,7 +591,7 @@
       else {
 
         tempn = tempn + 6;
-        diff = diff - (($('.pr-col').outerWidth()) * 6);
+        diff = diff - (($('.slider-item').outerWidth()) * 6);
         if (diff == 0 || tempn == n) {
           $('.product-slider').css("transform", "translateX(0px)");
         }
@@ -611,10 +611,10 @@
 
       tempn = tempn - 6;
       if (tempn >= 6) {
-        $('.product-slider').css("transform", "translateX(-" + (($('.pr-col').outerWidth()) * 6) + "px)");
+        $('.product-slider').css("transform", "translateX(-" + (($('.slider-item').outerWidth()) * 6) + "px)");
       }
       else if (tempn < 6 && tempn > 0) {
-        diff = len - (($('.pr-col').outerWidth()) * 6);
+        diff = len - (($('.slider-item').outerWidth()) * 6);
         d = "translateX(-" + diff + "px)";
         $('.product-slider').css("transform", d);
       }
