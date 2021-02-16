@@ -435,12 +435,12 @@
   <h4 style="padding: 0% 5%;">Mobiles</h4>
 
   <div class="slider carousel d-none d-md-block" style="overflow-x: hidden;">
-    <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv()">
+    <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
       <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
           style="color: black;font-size: 35px;"></i></span>
       </span>
     </a>
-    <a class="carousel-control-next" role="button" data-bs-slide="next" onclick="nxt()">
+    <a class="carousel-control-next" role="button" data-bs-slide="next" onclick="nxt(this)">
       <span aria-hidden="true"><i class="fas fa-angle-right d-none d-md-block"
           style="color: black;font-size: 35px;"></i></span>
     </a>
@@ -816,34 +816,43 @@
     $('.product-slider .slider-item').css("width", a);
 
 
-    function prv() {
-      translation_width = $('.content-slider').width() - (($('.slider-item').outerWidth()) * 6) + translatedwidth();
+    function prv(this_element) {
 
-      if(parseInt(translatedwidth() % (($('.slider-item').outerWidth()) * 6)) == 0)
+      content_slider = $(this_element).parent().find('.active-slider .content-slider');
+      product_slider = $(this_element).parent().find('.active-slider .content-slider .product-slider');
+      slider_item = $(this_element).parent().find('.active-slider .content-slider .product-slider .slider-item');
+
+      translated_width = parseFloat(((product_slider.css("transform")).split(", "))[4]);
+      translation_width = content_slider.width() - (slider_item.outerWidth() * 6) + translated_width;
+      
+      if(parseInt(translated_width % ((slider_item.outerWidth()) * 6)) == 0)
       {
-        $('.product-slider').css("transform", "translateX(-" + ((-1)*translatedwidth() - ($('.slider-item').outerWidth()) * 6) + "px)");
+        product_slider.css("transform", "translateX(-" + ((-1)*translated_width - (slider_item.outerWidth()) * 6) + "px)");
       }
       else
       {
-        $('.product-slider').css("transform", "translateX(-" + (-1)*(translatedwidth() - (translatedwidth() % (($('.slider-item').outerWidth()) * 6))) + "px)");
+        product_slider.css("transform", "translateX(-" + (-1)*(translated_width - (translated_width % ((slider_item.outerWidth()) * 6))) + "px)");
       }
     }
 
-    function nxt() {
-      translation_width = $('.content-slider').width() - (($('.slider-item').outerWidth()) * 6) + translatedwidth();
-      if (translation_width > (($('.slider-item').outerWidth()) * 6))
+    function nxt(this_element) {
+      content_slider = $(this_element).parent().find('.active-slider .content-slider');
+      product_slider = $(this_element).parent().find('.active-slider .content-slider .product-slider');
+      slider_item = $(this_element).parent().find('.active-slider .content-slider .product-slider .slider-item');
+
+      translated_width = parseFloat(((product_slider.css("transform")).split(", "))[4]);
+      translation_width = content_slider.width() - (slider_item.outerWidth() * 6) + translated_width;
+
+      if (translation_width > ((slider_item.outerWidth()) * 6))
       {
-        $('.product-slider').css("transform", "translateX(-" + ((-1)*translatedwidth() +($('.slider-item').outerWidth()) * 6) + "px)");
+        product_slider.css("transform", "translateX(-" + ((-1)*translated_width +(slider_item.outerWidth()) * 6) + "px)");
       }
       else
       {
-        $('.product-slider').css("transform", "translateX(-" + ((-1)*translatedwidth() + translation_width) + "px)");
+        product_slider.css("transform", "translateX(-" + ((-1)*translated_width + translation_width) + "px)");
       }
     }
     
-    function translatedwidth(){
-      return parseFloat((($('.product-slider').css("transform")).split(", "))[4]);
-    }
   </script>
 </body>
 
