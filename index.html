@@ -177,7 +177,6 @@
   <h3 style="text-align:center; margin-top: 15px; font-family: 'Times New Roman', Times, serif; margin-left: 30%; margin-right: 30%;
     ">Tech News</h3>
 
-
   <!-- <i class="fas fa-dot-circle"></i>  -->
 
   <div id="carouselExampleIndicators" class="carousel slide d-md-none" data-bs-ride="carousel">
@@ -434,7 +433,7 @@
   ">Latest Device</h3>
   <h4 style="padding: 0% 5%;">Mobiles</h4>
 
-  <div class="slider carousel d-none d-md-block" style="overflow-x: hidden;">
+  <div class="slider carousel d-none d-md-block" style="overflow-x: hidden;" onmouseover="calcu(this)">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
       <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
           style="color: black;font-size: 35px;"></i></span>
@@ -445,9 +444,9 @@
           style="color: black;font-size: 35px;"></i></span>
     </a>
     <div class="active-slider">
-      <div class="content-slider" style="touch-action: pan-x;">
+      <div class="content-slider">
         <div class="row product-slider"
-          style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s; transform : translateX(0px)">
+          style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s; touch-action: pan-x; transform : translateX(0px)">
 
           <div class="slider-item col-2">
             <div class="img-news">
@@ -601,21 +600,15 @@
               <h6>Iphone 12</h6>
             </div>
           </div>
-          <div class="slider-item col-2">
-            <div class="img-news">
-              <img src="image/Mobile/Apple/iphone12/1.jpg">
-            </div>
-            <div class="description-news">
-              <h6>Iphone 12</h6>
-            </div>
-          </div>
+         
         </div>
       </div>
 
     </div>
 
   </div>
-<div class="slider carousel d-none d-md-block" style="overflow-x: hidden;">
+
+<div class="slider carousel d-none d-md-block" style="overflow-x: hidden;" onmouseover="calcu(this)">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
       <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
           style="color: black;font-size: 35px;"></i></span>
@@ -626,9 +619,9 @@
           style="color: black;font-size: 35px;"></i></span>
     </a>
     <div class="active-slider">
-      <div class="content-slider" style="touch-action: pan-x;">
+      <div class="content-slider">
         <div class="row product-slider"
-          style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s; transform : translateX(0px)">
+          style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s; touch-action: pan-x; transform : translateX(0px);" >
 
           <div class="slider-item col-2">
             <div class="img-news">
@@ -808,9 +801,6 @@
 
 
     a = $('.carousel .row').find(".col-2").outerWidth();
-    len = $('.product-slider').find('.slider-item').outerWidth();
-    len = len * 20;
-    $('.content-slider').css("width", len);
     $('.product-slider .slider-item').css("width", a);
 
 
@@ -851,6 +841,11 @@
       }
     }
     
+    function calcu(this_ele)
+    {
+      len = ($(this_ele).find('.active-slider .content-slider .product-slider .slider-item').outerWidth()) *($(this_ele).find('.active-slider .content-slider .product-slider .slider-item').length);
+      $(this_ele).find('.active-slider .content-slider').css("width",len);
+    }
   </script>
 </body>
 
