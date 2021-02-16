@@ -608,6 +608,7 @@
 
   </div>
 
+<h4 style="padding: 0% 5%;">Laptops</h4>
 <div class="slider carousel d-none d-md-block" style="overflow-x: hidden;" onmouseover="calcu(this)">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
       <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
@@ -845,6 +846,7 @@
     {
       len = ($(this_ele).find('.active-slider .content-slider .product-slider .slider-item').outerWidth()) *($(this_ele).find('.active-slider .content-slider .product-slider .slider-item').length);
       $(this_ele).find('.active-slider .content-slider').css("width",len);
+      $(this_ele).removeAttr('onmouseover');
     }
   </script>
 </body>
