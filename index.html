@@ -615,8 +615,7 @@
     </div>
 
   </div>
-
-  <div class="slider carousel d-none d-md-block" style="overflow-x: hidden;">
+<div class="slider carousel d-none d-md-block" style="overflow-x: hidden;">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
       <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
           style="color: black;font-size: 35px;"></i></span>
@@ -627,7 +626,7 @@
           style="color: black;font-size: 35px;"></i></span>
     </a>
     <div class="active-slider">
-      <div class="content-slider">
+      <div class="content-slider" style="touch-action: pan-y;">
         <div class="row product-slider"
           style="display: flex; flex-wrap: nowrap;padding: 10px 0px;transition-duration: 1s; transform : translateX(0px)">
 
@@ -809,9 +808,8 @@
 
 
     a = $('.carousel .row').find(".col-2").outerWidth();
-    n = $('.product-slider .slider-item').length;
     len = $('.product-slider').find('.slider-item').outerWidth();
-    len = len * n;
+    len = len * 20;
     $('.content-slider').css("width", len);
     $('.product-slider .slider-item').css("width", a);
 
