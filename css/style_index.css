@@ -77,7 +77,7 @@
     .product-slider
     {
         overflow-x: scroll;
-        touch-action: pan-x;
+        touch-action: manipulation;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
