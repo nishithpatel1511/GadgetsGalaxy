@@ -71,8 +71,8 @@
 {
     .product-slider
     {
-        overflow: scroll;
-        touch-action: cross-slide-x;
+        overflow-x: scroll;
+        touch-action: pan-y;
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
