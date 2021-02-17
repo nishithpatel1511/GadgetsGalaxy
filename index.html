@@ -435,13 +435,11 @@
 
   <div class="slider carousel" style="overflow-x: hidden;" onmouseover="calcu(this)">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
-      <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
-          style="color: black;font-size: 35px;"></i></span>
+      <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
       </span>
     </a>
     <a class="carousel-control-next" role="button" data-bs-slide="next" onclick="nxt(this)">
-      <span aria-hidden="true"><i class="fas fa-angle-right d-none d-md-block"
-          style="color: black;font-size: 35px;"></i></span>
+      <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
     </a>
     <div class="active-slider">
       <div class="content-slider">
@@ -611,13 +609,11 @@
 <h4 style="padding: 0% 5%;">Laptops</h4>
 <div class="slider carousel" style="overflow-x: hidden;" onmouseover="calcu(this)">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
-      <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
-          style="color: black;font-size: 35px;"></i></span>
+      <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
       </span>
     </a>
     <a class="carousel-control-next" role="button" data-bs-slide="next" onclick="nxt(this)">
-      <span aria-hidden="true"><i class="fas fa-angle-right d-none d-md-block"
-          style="color: black;font-size: 35px;"></i></span>
+      <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
     </a>
     <div class="active-slider">
       <div class="content-slider">
@@ -794,13 +790,11 @@
   <h4 style="padding: 0% 5%;">Tablets</h4>
 <div class="slider carousel" style="overflow-x: hidden;" onmouseover="calcu(this)">
     <a class="carousel-control-prev" role="button" data-bs-slide="prev" onclick="prv(this)">
-      <span aria-hidden="true"><i class="fas fa-angle-left d-none d-md-block"
-          style="color: black;font-size: 35px;"></i></span>
+      <span aria-hidden="true"><i class="fas fa-angle-left"></i></span>
       </span>
     </a>
     <a class="carousel-control-next" role="button" data-bs-slide="next" onclick="nxt(this)">
-      <span aria-hidden="true"><i class="fas fa-angle-right d-none d-md-block"
-          style="color: black;font-size: 35px;"></i></span>
+      <span aria-hidden="true"><i class="fas fa-angle-right"></i></span>
     </a>
     <div class="active-slider">
       <div class="content-slider">
@@ -993,7 +987,7 @@
     }
     else
     {
-      $('.product-slider .slider-item').css("width", (window.innerWidth / 2));
+      $('.product-slider .slider-item').css("width", (($('.product-slider').width())/2));
       
     }
 
