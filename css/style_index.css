@@ -34,15 +34,17 @@
 }
 .carousel-indicators a{
     margin: 0% 5px;
-    color: black;
     text-decoration: none;
     outline: none;
     border: none;
     background-color: none !important;
 }
-.carousel-indicators .active
-{
+.carousel-indicators a i {
     color: #bbb;
+}
+.carousel-indicators .active i
+{
+    color: black;
 }
 
 .carousel-item .row {

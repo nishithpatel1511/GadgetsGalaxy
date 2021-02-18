@@ -135,11 +135,16 @@ $(function () {
     {
       $('#search-bar').removeClass('d-none');
       $('#search-icon').toggleClass('fa-times');
+      if($('#resultm').length != 0)
+      {
+       $('.carousel').css("z-index","-1");
+      }
      }
      else
      {
        $('#search-bar').addClass('d-none');
        $('#search-icon').toggleClass('fa-times');
+       $('.carousel').css("z-index","0");
      }
   });
   $(document).click(function(e){
@@ -151,7 +156,8 @@ $(function () {
         {
           clk_search++;  
           $('#search-bar').addClass('d-none');
-          $('#search-icon').toggleClass('fa-times');        
+          $('#search-icon').toggleClass('fa-times');    
+          $('.carousel').css("z-index","0");
         }
       }
     }
