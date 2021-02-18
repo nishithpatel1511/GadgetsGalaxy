@@ -64,6 +64,10 @@ $(document).ready(function () {
               $('#resultm').append('<li class="list-group-item search-li"><img src = "' + value.image + '" height=55px width=55px><div><span>' + value.name + '</span><span>' + value.company + '</span></div></li>');
               $('.carousel').css("z-index","-1");
             }
+            else
+            {
+              $('.carousel').css("z-index","0");
+            }
           });
         },
         statusCode: {
